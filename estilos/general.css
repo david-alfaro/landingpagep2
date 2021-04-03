@@ -1,0 +1,298 @@
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  /*   Colores   */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #232125;
+}
+
+/*--Clases Globales--*/
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Livvic", sans-serif;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: "Livvic", sans-serif;
+}
+h3 {
+  font-family: "Livvic", sans-serif;
+  font-size: 1.3rem;
+}
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+}
+
+span {
+  font-family: "Livvic", sans-serif;
+}
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+/*---Navbar---*/
+nav {
+  background: white;
+  padding: 0 1rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem;
+}
+.collapse {
+  height: 30rem;
+}
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-links {
+  padding: 1.2rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: "Livvic", sans-serif;
+}
+.nav .nav-items .nav-links:hover {
+  background-color: var(--midnight);
+}
+.nav .nav-items .nav-links:hover a {
+  color: var(--white);
+}
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: "Livvic", sans-serif;
+  font-size: 1.5rem;
+}
+
+.nav .social {
+  padding: 1.4rem 0;
+}
+.nav .social i {
+  padding: 0 0.2rem;
+}
+
+.nav .social i:hover {
+  color: #a1c4cf;
+}
+
+/*---Main--*/
+main .banner-inicio {
+  background-image: url("../img/banner-inicio.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .banner-inicio .site-background {
+  padding-top: 15rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .banner-inicio .btn {
+  margin: 1.8rem;
+  background: var(--midnight);
+  color: white;
+  font-size: 18px;
+}
+
+main .banner-inicio .btn:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+/*---Beneficios--*/
+#sct-beneficios {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#sct-beneficios .beneficios {
+  width: 225px;
+  height: 225px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+#sct-beneficios .beneficios #beneficio-1,
+#beneficio-2,
+#beneficio-3 {
+  width: 100%;
+  height: 100px;
+  font-size: 70px;
+  margin-top: 15px;
+}
+
+.beneficios p {
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Livvic", sans-serif;
+}
+/*--Testimonios--*/
+#sct-testimonios {
+  width: 100%;
+  height: 450px;
+  background-color: var(--midnight);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sct-testimonios .testimonio {
+  width: 20%;
+  height: 350px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+}
+
+#sct-testimonios .testimonio #foto1 {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../img/test1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+}
+#sct-testimonios .testimonio #foto2 {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../img/test2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+}
+#sct-testimonios .testimonio #foto3 {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../img/test3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
+/*Seccion de registrar*/
+#registrar {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#registrar #registro {
+  width: 60%;
+  height: 50px;
+  margin-top: 15px;
+}
+#registrar h2 {
+  font-size: 32px;
+}
+#registrar label {
+  font-size: 18px;
+  font-family: "Livvic", sans-serif;
+}
+#registrar input {
+  width: 300px;
+  height: 25px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#registrar button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  background-color: var(--midnight);
+  padding: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+#registrar button:hover {
+  cursor: pointer;
+}
+/*Estilos del footer*/
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--midnight);
+}
+footer p {
+  margin-top: 100px;
+  margin-left: 25px;
+  color: #ffffff;
+  font-family: "Livvic", sans-serif;
+}
